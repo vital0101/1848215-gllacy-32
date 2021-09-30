@@ -46,7 +46,7 @@
     </div>
   </header>
   <main class="main-catalog">
-    <div class="breadcrumbs">
+    <div class="container">
       <h2 class="visually-hidden">Навигация по страницам сайта.</h2>
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-item">
@@ -65,25 +65,16 @@
       <div class="container">
         <h2 class="visually-hidden">Фильтр выбора товара.</h2>
         <form action="https://echo.htmlacademy.ru/" method="GET">
-          <label class="sorting-text" for="sorting">Сортировка:</label>
-          <select name="sorting" id="sorting">
-            <option value="popular">по популярности</option>
-          </select>
-          <div>
-            <p>Цена: 100 ₽ – 500 ₽</p>
-            <button class="range-toggle toggle-min" type="button">
-              <span class="visually-hidden">Изменить минимальную цену.</span>
-            </button>
-            <button class="range-toggle toggle-max" type="button">
-              <span class="visually-hidden">Изменить максимальную цену.</span>
-            </button>
-            <label class="catalog-filter-label">
-              от <input class="catalog-filter-input" type="number" name="min-price"> ₽
-            </label>
-            <label class="catalog-filter-label">
-              до <input class="catalog-filter-input" type="number" name="max-price"> ₽
-            </label>
-          </div>
+          <fieldset>
+            <legend class="sorting-text">Сортировка:</legend>
+            <select name="sorting" id="sorting">
+              <option value="popular">по популярности</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Цена: 100 ₽ – 500 ₽</legend>
+            <div class="rang"></div>
+          </fieldset>
           <fieldset>
             <legend class="fat-text">Жирность:</legend>
             <ul class="fat-list">
@@ -133,7 +124,7 @@
               </li>
             </ul>
           </fieldset>
-          <input type="submit" value="Применить">
+          <button type="submit">Применить</button>
         </form>
       </div>
     </section>
@@ -146,114 +137,116 @@
             <h3>Малинка</h3>
             <p>Сливочное мороженое с малиновым джемом</p>
             <p>310 ₽/<span>кг</span></p>
-            <a href="#"><span class="visually-hidden">Корзина.</span></a>
+            <a href="#" aria-label="Корзина"><img src="#" alt="корзина."></a>
           </li>
           <li class="ice-cards-item">
             <img src="#" alt="мороженное со вкусом фисташки">
             <h3>Фисташка</h3>
             <p>Фисташковый пломбир с кусочками шоколада</p>
             <p>340 ₽/<span>кг</span></p>
-            <a href="#"><span class="visually-hidden">Корзина.</span></a>
+            <a href="#" aria-label="Корзина"><img src="#" alt="корзина."></a>
           </li>
           <li class="ice-cards-item">
             <img src="#" alt="мороженное со вкусом черники">
             <h3>Черника</h3>
             <p>Крем-брюле с черничным джемом</p>
             <p>330 ₽/<span>кг</span></p>
-            <a href="#"><span class="visually-hidden">Корзина.</span></a>
+            <a href="#" aria-label="Корзина"><img src="#" alt="корзина."></a>
           </li>
           <li class="ice-cards-item">
             <img src="#" alt="мороженное со вкусом бабл-гам">
             <h3>Бабл-гам</h3>
             <p>Ванильный пломбир со сладкой посыпкой</p>
             <p>320 ₽/<span>кг</span></p>
-            <a href="#"><span class="visually-hidden">Корзина.</span></a>
+            <a href="#" aria-label="Корзина"><img src="#" alt="корзина."></a>
           </li>
           <li class="ice-cards-item">
             <img src="#" alt="мороженное со вкусом ежевики">
             <h3>Ежевика</h3>
             <p>Сливочное мороженое с ежевичным джемом</p>
             <p>330 ₽/<span>кг</span></p>
-            <a href="#"><span class="visually-hidden">Корзина.</span></a>
+            <a href="#" aria-label="Корзина"><img src="#" alt="корзина."></a>
           </li>
           <li class="ice-cards-item">
             <img src="#" alt="мороженное со вкусом банана">
             <h3>Банан</h3>
             <p>Сливочный пломбир с банановым вкусом</p>
             <p>340 ₽/<span>кг</span></p>
-            <a href="#"><span class="visually-hidden">Корзина.</span></a>
+            <a href="#" aria-label="Корзина"><img src="#" alt="корзина."></a>
           </li>
           <li class="ice-cards-item">
             <img src="#" alt="мороженное со вкусом шоколада">
             <h3>Шоколадка</h3>
             <p>Классический шоколадный пломбир</p>
             <p>270 ₽/<span>кг</span></p>
-            <a href="#"><span class="visually-hidden">Корзина.</span></a>
+            <a href="#" aria-label="Корзина"><img src="#" alt="корзина."></a>
           </li>
           <li class="ice-cards-item">
             <img src="#" alt="мороженное со вкусом клубники">
             <h3>Клубничка</h3>
             <p>Сливочный пломбир с клубничным вкусом</p>
             <p>300 ₽/<span>кг</span></p>
-            <a href="#"><span class="visually-hidden">Корзина.</span></a>
+            <a href="#" aria-label="Корзина"><img src="#" alt="корзина."></a>
           </li>
           <li class="ice-cards-item">
             <img src="#" alt="мороженное со вкусом лимона">
             <h3>Лимон</h3>
             <p>Освежающий лимонный сорбет</p>
             <p>310 ₽/<span>кг</span></p>
-            <a href="#"><span class="visually-hidden">Корзина.</span></a>
+            <a href="#" aria-label="Корзина"><img src="#" alt="корзина."></a>
           </li>
           <li class="ice-cards-item">
             <img src="#" alt="мороженное со вкусом ментола">
             <h3>Ментол</h3>
             <p>Сливочный пломбир с ментоловым сиропом</p>
             <p>320 ₽/<span>кг</span></p>
-            <a href="#"><span class="visually-hidden">Корзина.</span></a>
+            <a href="#" aria-label="Корзина"><img src="#" alt="корзина."></a>
           </li>
           <li class="ice-cards-item">
             <img src="#" alt="мороженное со вкусом фисташки с шоколадным сиропом">
             <h3>Орешек</h3>
             <p>Фисташковый пломбир с шоколадным сиропом</p>
             <p>360 ₽/<span>кг</span></p>
-            <a href="#"><span class="visually-hidden">Корзина.</span></a>
+            <a href="#" aria-label="Корзина"><img src="#" alt="корзина."></a>
           </li>
           <li class="ice-cards-item">
             <img src="#" alt="мороженное со вкусом крем-брюле">
             <h3>Крем-брюле</h3>
             <p>Классическое крем-брюле</p>
             <p>280 ₽/<span>кг</span></p>
-            <a href="#"><span class="visually-hidden">Корзина.</span></a>
+            <a href="#" aria-label="Корзина"><img src="#" alt="корзина."></a>
           </li>
         </ul>
         <button class="ice-button-show-more" type="button">Показать еще</button>
-        <ul class="ice-pagination-list">
-          <li class="ice-pagination-item">
-            <a class="ice-pagination-link ice-pagination-prev ice-pagination-disabled">
-              <span class="visually-hidden">Предыдущий товар</span>
-            </a>
-          </li>
-          <li class="ice-pagination-item">
-            <a class="pagination-link ice-pagination-current" href="#">1</a>
-          </li>
-          <li class="ice-pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="ice-pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="ice-pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="ice-pagination-item">
-            <a class="pagination-link" href="#">5</a>
-          </li>
-          <li class="ice-pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Следующий товар</span>
-            </a>
-          </li>
-        </ul>
+        <div class="ice-pagination-container">
+          <ul class="ice-pagination-list">
+            <li class="ice-pagination-item">
+              <a class="ice-pagination-link ice-pagination-prev ice-pagination-disabled">
+                <span class="visually-hidden">Предыдущий товар</span>
+              </a>
+            </li>
+            <li class="ice-pagination-item">
+              <a class="pagination-link ice-pagination-current" href="#">1</a>
+            </li>
+            <li class="ice-pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="ice-pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="ice-pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="ice-pagination-item">
+              <a class="pagination-link" href="#">5</a>
+            </li>
+            <li class="ice-pagination-item">
+              <a class="pagination-link pagination-next" href="#">
+                <span class="visually-hidden">Следующий товар</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>

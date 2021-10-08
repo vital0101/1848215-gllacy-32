@@ -14,11 +14,12 @@
     <div class="container">
       <nav class="navigation">
         <a class="navigation-link" href="index.html">
-          <img class="logo" src="images/svg/logo-header.svg" width="137" height="56" alt="логотип компании Глейси">
+          <img class="navigation-logo" src="images/svg/logo-header.svg" width="137" height="56"
+            alt="логотип компании Глейси" />
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
+            <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Оплата и доставка</a>
@@ -28,20 +29,18 @@
           </li>
         </ul>
       </nav>
-      <a class="menu-phone" href="tel:78005558628">+7 800 555-86-28</a>
+      <a class="menu-phone-link" href="tel:78005558628">+7 800 555-86-28</a>
       <ul class="menu-user-list">
         <li class="menu-user-item">
-          <a class="menu-link" href="#">
+          <a class="menu-user-link" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="menu-user-item">
-          <a class="menu-link" href="#">Вход</a>
+          <a class="menu-user-link" href="#">Вход</a>
         </li>
         <li class="menu-user-item">
-          <a class="menu-link" href="#">
-            <span class="visually-hidden">Корзина</span>
-          </a>
+          <a class="menu-user-link" href="#"><span class="visually-hidden">Корзина.</span></a>
         </li>
       </ul>
     </div>
@@ -57,7 +56,7 @@
           <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" title="текущая страница">Сливочное</a>
+          <a class="breadcrumbs-link breadcrumbs-link-current" title="текущая страница">Сливочное</a>
         </li>
       </ul>
     </div>
@@ -65,7 +64,7 @@
     <section class="filter-cards">
       <div class="container">
         <h2 class="visually-hidden">Фильтр выбора товара.</h2>
-        <form action="https://echo.htmlacademy.ru/" method="GET">
+        <form class="sorting-form" action="https://echo.htmlacademy.ru/" method="GET">
           <fieldset>
             <legend class="sorting-text">Сортировка:</legend>
             <select name="sorting" id="sorting">
@@ -125,7 +124,7 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Применить</button>
+          <button class="filter-button" type="submit">Применить</button>
         </form>
       </div>
     </section>
@@ -134,110 +133,121 @@
       <div class="container">
         <ul class="ice-cards-list">
           <li class="ice-cards-item">
-            <img src="images/catalog/malina.png" width="270" height="184" alt="мороженное со вкусом малины">
-            <h3>Малинка</h3>
-            <p>Сливочное мороженое с малиновым джемом</p>
-            <p>310 ₽/<span>кг</span></p>
+            <img class="ice-cards-image" src="images/catalog/malina.png" width="270" height="184"
+              alt="мороженное со вкусом малины">
+            <h3 class="ice-cards-subtitle">Малинка</h3>
+            <p class="ice-cards-text">Сливочное мороженое с малиновым джемом</p>
+            <p class="ice-cards-price">310 ₽/кг</p>
             <a href="#" aria-label="Корзина">
               <img src="#" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
-            <img src="images/catalog/fistashka.png" width="270" height="184" alt="мороженное со вкусом фисташки">
-            <h3>Фисташка</h3>
-            <p>Фисташковый пломбир с кусочками шоколада</p>
-            <p>340 ₽/<span>кг</span></p>
+            <img class="ice-cards-image" src="images/catalog/fistashka.png" width="270" height="184"
+              alt="мороженное со вкусом фисташки">
+            <h3 class="ice-cards-subtitle">Фисташка</h3>
+            <p class="ice-cards-text">Фисташковый пломбир с кусочками шоколада</p>
+            <p class="ice-cards-price">340 ₽/кг</p>
             <a href="#" aria-label="Корзина">
               <img src="#" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
-            <img src="images/catalog/chernika.png" width="270" height="184" alt="мороженное со вкусом черники">
-            <h3>Черника</h3>
-            <p>Крем-брюле с черничным джемом</p>
-            <p>330 ₽/<span>кг</span></p>
+            <img class="ice-cards-image" src="images/catalog/chernika.png" width="270" height="184"
+              alt="мороженное со вкусом черники">
+            <h3 class="ice-cards-subtitle">Черника</h3>
+            <p class="ice-cards-text">Крем-брюле с черничным джемом</p>
+            <p class="ice-cards-price">330 ₽/кг</p>
             <a href="#" aria-label="Корзина">
               <img src="#" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
-            <img src="images/catalog/buble-gum.png" width="270" height="184" alt="мороженное со вкусом бабл-гам">
-            <h3>Бабл-гам</h3>
-            <p>Ванильный пломбир со сладкой посыпкой</p>
-            <p>320 ₽/<span>кг</span></p>
+            <img class="ice-cards-image" src="images/catalog/buble-gum.png" width="270" height="184"
+              alt="мороженное со вкусом бабл-гам">
+            <h3 class="ice-cards-subtitle">Бабл-гам</h3>
+            <p class="ice-cards-text">Ванильный пломбир со сладкой посыпкой</p>
+            <p class="ice-cards-price">320 ₽/кг</p>
             <a href="#" aria-label="Корзина">
               <img src="#" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
-            <img src="images/catalog/ejevika.png" width="270" height="184" alt="мороженное со вкусом ежевики">
-            <h3>Ежевика</h3>
-            <p>Сливочное мороженое с ежевичным джемом</p>
-            <p>330 ₽/<span>кг</span></p>
+            <img class="ice-cards-image" src="images/catalog/ejevika.png" width="270" height="184"
+              alt="мороженное со вкусом ежевики">
+            <h3 class="ice-cards-subtitle">Ежевика</h3>
+            <p class="ice-cards-text">Сливочное мороженое с ежевичным джемом</p>
+            <p class="ice-cards-price">330 ₽/кг</p>
             <a href="#" aria-label="Корзина">
               <img src="#" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
-            <img src="images/catalog/banana.png" width="270" height="184" alt="мороженное со вкусом банана">
-            <h3>Банан</h3>
-            <p>Сливочный пломбир с банановым вкусом</p>
-            <p>340 ₽/<span>кг</span></p>
+            <img class="ice-cards-image" src="images/catalog/banana.png" width="270" height="184"
+              alt="мороженное со вкусом банана">
+            <h3 class="ice-cards-subtitle">Банан</h3>
+            <p class="ice-cards-text">Сливочный пломбир с банановым вкусом</p>
+            <p class="ice-cards-price">340 ₽/кг</p>
             <a href="#" aria-label="Корзина">
               <img src="#" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
-            <img src="images/catalog/choclate.png" width="270" height="184" alt="мороженное со вкусом шоколада">
-            <h3>Шоколадка</h3>
-            <p>Классический шоколадный пломбир</p>
-            <p>270 ₽/<span>кг</span></p>
+            <img class="ice-cards-image" src="images/catalog/choclate.png" width="270" height="184"
+              alt="мороженное со вкусом шоколада">
+            <h3 class="ice-cards-subtitle">Шоколадка</h3>
+            <p class="ice-cards-text">Классический шоколадный пломбир</p>
+            <p class="ice-cards-price">270 ₽/кг</p>
             <a href="#" aria-label="Корзина">
               <img src="#" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
-            <img src="images/catalog/klubnika.png" width="270" height="184" alt="мороженное со вкусом клубники">
-            <h3>Клубничка</h3>
-            <p>Сливочный пломбир с клубничным вкусом</p>
-            <p>300 ₽/<span>кг</span></p>
+            <img class="ice-cards-image" src="images/catalog/klubnika.png" width="270" height="184"
+              alt="мороженное со вкусом клубники">
+            <h3 class="ice-cards-subtitle">Клубничка</h3>
+            <p class="ice-cards-text">Сливочный пломбир с клубничным вкусом</p>
+            <p class="ice-cards-price">300 ₽/кг</p>
             <a href="#" aria-label="Корзина">
               <img src="#" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
-            <img src="images/catalog/limon.png" width="270" height="184" alt="мороженное со вкусом лимона">
-            <h3>Лимон</h3>
-            <p>Освежающий лимонный сорбет</p>
-            <p>310 ₽/<span>кг</span></p>
+            <img class="ice-cards-image" src="images/catalog/limon.png" width="270" height="184"
+              alt="мороженное со вкусом лимона">
+            <h3 class="ice-cards-subtitle">Лимон</h3>
+            <p class="ice-cards-text">Освежающий лимонный сорбет</p>
+            <p class="ice-cards-price">310 ₽/кг</p>
             <a href="#" aria-label="Корзина">
               <img src="#" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
-            <img src="images/catalog/mentol.png" width="270" height="184" alt="мороженное со вкусом ментола">
-            <h3>Ментол</h3>
-            <p>Сливочный пломбир с ментоловым сиропом</p>
-            <p>320 ₽/<span>кг</span></p>
+            <img class="ice-cards-image" src="images/catalog/mentol.png" width="270" height="184"
+              alt="мороженное со вкусом ментола">
+            <h3 class="ice-cards-subtitle">Ментол</h3>
+            <p class="ice-cards-text">Сливочный пломбир с ментоловым сиропом</p>
+            <p class="ice-cards-price">320 ₽/кг</p>
             <a href="#" aria-label="Корзина">
               <img src="#" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
-            <img src="images/catalog/fistashka.png" width="270" height="184"
+            <img class="ice-cards-image" src="images/catalog/fistashka.png" width="270" height="184"
               alt="мороженное со вкусом фисташки с шоколадным сиропом">
-            <h3>Орешек</h3>
-            <p>Фисташковый пломбир с шоколадным сиропом</p>
-            <p>360 ₽/<span>кг</span></p>
+            <h3 class="ice-cards-subtitle">Орешек</h3>
+            <p class="ice-cards-text">Фисташковый пломбир с шоколадным сиропом</p>
+            <p class="ice-cards-price">360 ₽/кг</p>
             <a href="#" aria-label="Корзина">
               <img src="#" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
-            <img src="images/catalog/cream-brule.png" width="270" height="184" alt="мороженное со вкусом крем-брюле">
-            <h3>Крем-брюле</h3>
-            <p>Классическое крем-брюле</p>
-            <p>280 ₽/<span>кг</span></p>
+            <img class="ice-cards-image" src="images/catalog/cream-brule.png" width="270" height="184"
+              alt="мороженное со вкусом крем-брюле">
+            <h3 class="ice-cards-subtitle">Крем-брюле</h3>
+            <p class="ice-cards-text">Классическое крем-брюле</p>
+            <p class="ice-cards-price">280 ₽/кг</p>
             <a href="#" aria-label="Корзина">
               <img src="#" alt="корзина.">
             </a>
@@ -252,22 +262,22 @@
               </a>
             </li>
             <li class="ice-pagination-item">
-              <a class="pagination-link ice-pagination-current" href="#">1</a>
+              <a class="ice-pagination-link ice-pagination-current" href="#">1</a>
             </li>
             <li class="ice-pagination-item">
-              <a class="pagination-link" href="#">2</a>
+              <a class="ice-pagination-link" href="#">2</a>
             </li>
             <li class="ice-pagination-item">
-              <a class="pagination-link" href="#">3</a>
+              <a class="ice-pagination-link" href="#">3</a>
             </li>
             <li class="ice-pagination-item">
-              <a class="pagination-link" href="#">4</a>
+              <a class="ice-pagination-link" href="#">4</a>
             </li>
             <li class="ice-pagination-item">
-              <a class="pagination-link" href="#">5</a>
+              <a class="ice-pagination-link" href="#">5</a>
             </li>
             <li class="ice-pagination-item">
-              <a class="pagination-link pagination-next" href="#">
+              <a class="ice-pagination-link pagination-next" href="#">
                 <span class="visually-hidden">Следующий товар</span>
               </a>
             </li>
@@ -302,7 +312,7 @@
         <h2 class="visually-hidden">Информация для клиентов.</h2>
         <ul class="documents-list">
           <li class="documents-item">
-            <a class="documents-link" href="#">Для поставщиков</a>
+            <a class="documents-link documents-link-current" href="#">Для поставщиков</a>
           </li>
           <li class="documents-item">
             <a class="documents-link" href="#">О производстве</a>
@@ -317,10 +327,14 @@
       </section>
       <section class="about-site">
         <h2 class="visually-hidden">Сайт сделан html academy.</h2>
-        <a class="logo-htmlacademy" href="https://htmlacademy.ru/">
-          <img src="images/svg/logo_htmlacademy.svg" alt="логотип htmlacademy">
+        <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
+          <img class="logo-htmlacademy-image" src="images/svg/logo_htmlacademy.svg" width="93" height="27"
+            alt="логотип htmlacademy">
         </a>
-        <p class="copyright-htmlacademy">Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+        <p class="copyright-htmlacademy">Сделано в
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+          © 2021
+        </p>
       </section>
     </div>
   </footer>

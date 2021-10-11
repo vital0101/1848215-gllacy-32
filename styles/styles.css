@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -30,14 +38,30 @@ body {
   background-color: #feafc3;
 }
 
-/* .visually-hidden {
-  visibility: hidden;
-} */
-
 .page-header {
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
+}
+
+.header-container {
+  width: 1170px;
+  min-height: 104px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header-logo-link {
+  margin-right: 16px;
+}
+
+.header-logo-image {
+  width: 137px;
+}
+
+.navigation {
+  width: 400px;
+  margin-right: auto;
 }
 
 .navigation-list {
@@ -47,13 +71,12 @@ body {
 }
 
 .navigation-link {
-  font-size: 16px;
-  line-height: 20px;
-  color: #2d3440;
   text-decoration: none;
+  color: #2d3440;
 }
 
-.menu-phone-link {
+.header-phone-link {
+  margin-right: 18px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -69,15 +92,31 @@ body {
 
 .menu-user-link {
   font-size: 14px;
-  line-height: 20px;
   color: #2d3440;
   text-decoration: none;
 }
 
-.slider-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.main-container {
+  flex-grow: 1;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.slider-container {
+  display: flex;
+}
+
+.slider-container-text {
+  width: 470px;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-container-image {
+  width: 630px;
+  display: flex;
+  align-items: center;
 }
 
 .slider-subtitle {
@@ -103,6 +142,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-right: auto;
 }
 
 .social-list {
@@ -112,10 +152,39 @@ body {
 }
 
 .present-title {
+  width: 443px;
+  margin: auto;
+  text-align: center;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  text-align: center;
+}
+
+.present-container-general {
+  display: flex;
+}
+
+.present-container-1 {
+  width: 570px;
+  min-height: 268px;
+  margin-inline-end: 30px;
+  display: flex;
+  background-color: #FF7799;
+}
+
+.present-container-2 {
+  width: 570px;
+  min-height: 268px;
+  display: flex;
+  background-color: #FF7799;
+}
+
+.present-container-discription {
+  width: 320px;
+}
+
+.present-container-image {
+  width: 230px;
 }
 
 .present-subtitle {
@@ -136,19 +205,36 @@ body {
   color: #2d3440;
 }
 
+.ice-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.ice-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ice-cards-item {
+  width: 270px;
+  background-color: #fcfcfc;
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+
+.ice-cards-item:nth-child(4n+4) {
+  margin-right: 0;
+}
+
 .ice-cards-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
 }
-
-.ice-cards-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .ice-cards-subtitle {
   font-weight: bold;
   font-size: 20px;
@@ -170,11 +256,28 @@ body {
 }
 
 .advantages {
-  width: 1170px;
-  height: 480px;
+  display: flow-root;
+  min-height: 480px;
   background-color: #ffffff;
   background-image: url("../images/advantages.jpg");
   border-radius: 16px;
+}
+
+.advantages-container {
+  width: 1122px;
+  min-height: 432px;
+  border-radius: 16px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 506px;
 }
 
 .advantages-subtitle {
@@ -196,6 +299,23 @@ body {
   color: #565C66;
 }
 
+.news-subscribe-container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-container {
+  display: flow-root;
+  width: 570px;
+  height: 220px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  background-image: url(../images/blog.jpg);
+  background-repeat: no-repeat;
+}
+
 .news-blog-title {
   font-size: 16px;
   line-height: 20px;
@@ -213,6 +333,22 @@ body {
   line-height: 30px;
 }
 
+.subscribe {
+  width: 570px;
+  padding: 6px;
+  box-sizing: border-box;
+  background-image: url(../images/subscribe.png);
+  background-repeat: no-repeat;
+}
+
+.subscribe-container {
+  display: flow-root;
+  width: 558px;
+  height: 208px;
+  border-radius: 16px;
+  background-color: #fcfcfc;
+}
+
 .subscribe-text {
   font-size: 16px;
   line-height: 22px;
@@ -226,14 +362,24 @@ body {
   color: #FCFCFC;
 }
 
+.delivery-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 
 .delivery {
-  width: 1170px;
-  height: 534px;
+  display: flex;
+  min-height: 534px;
   background-color: #ffffff;
   background-image: url("../images/delivery.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
+}
+
+.delivery-text-box {
+  width: 371px;
+  margin: 0 135px 0 100px;
 }
 
 .delivery-title {
@@ -246,6 +392,12 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
+}
+
+.delivery-form {
+  width: 500px;
+  min-height: 406px;
+  background-color: #fcfcfc;
 }
 
 input [text] {
@@ -261,13 +413,25 @@ input [text] {
   color: #FCFCFC;
 }
 
+.contacts-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 .contacts {
+  display: flow-root;
   width: 1170px;
   height: 492px;
   background-color: #ffffff;
   background-image: url("../images/contacts.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
+}
+
+.contacts-box {
+  width: 343px;
+  margin: 64px;
+  background-color: #ffffff;
 }
 
 .contacts-subtitle {
@@ -302,10 +466,23 @@ input [text] {
   color: #FCFCFC;
 }
 
+.footer-container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.social-list {
+  width: 104px;
+  margin-right: 299px;
+}
+
 .documents-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 356px;
+  margin-right: 200px;
 }
 
 .documents-link {
@@ -317,6 +494,10 @@ input [text] {
 
 .documents-link-current {
   font-weight: bold;
+}
+
+.about-site {
+  width: 193px;
 }
 
 .logo-htmlacademy-image {
@@ -355,9 +536,18 @@ input [text] {
   border: none;
 }
 
+.filter-container {
+  width: 807px;
+}
+
 .sorting-form {
   font-size: 14px;
   line-height: 20px;
+}
+
+.sorting-text {
+  width: 196px;
+  margin-right: 24px;
 }
 
 .filter-button {

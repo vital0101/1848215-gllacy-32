@@ -52,43 +52,33 @@ body {
 .container {
   width: 1170px;
   margin: 0 auto;
-  outline: 1px solid blue;
-  outline-offset: -1px;
+
 }
 
 .page-header {
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
-.header-box {
+.header-container {
   min-height: 104px;
   display: flex;
   align-items: center;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .header-logo-link {
   margin-right: 16px;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .header-logo-image {
+  display: block;
   width: 137px;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .navigation {
   width: 400px;
   margin-right: auto;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .navigation-list {
@@ -97,13 +87,10 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .navigation-item {
   border-radius: 26px;
-  outline: 1px solid blue;
 }
 
 .navigation-link {
@@ -129,7 +116,7 @@ body {
   padding: 0;
 }
 
-ю.menu-user-list:nth-child(1) {
+.menu-user-list:nth-child(1) {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -143,38 +130,34 @@ body {
   text-decoration: none;
 }
 
+/* .main-container {
+  flex-grow: 1;
+} */
+
 .main-index {
+  padding-top: 21px;
+  padding-bottom: 48px;
   flex-grow: 1;
 }
 
 .slider {
-  padding-top: 21px;
   box-sizing: border-box;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .slider-box {
   display: flex;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .slider-box-text {
   width: 470px;
-  margin-left: 70px;
   display: flex;
   flex-direction: column;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .slider-box-image {
   width: 630px;
   display: flex;
   align-items: center;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .slider-subtitle {
@@ -205,8 +188,6 @@ body {
   margin: 0;
   padding: 0;
   margin-right: auto;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .slider-pagination-link {
@@ -225,14 +206,10 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .present {
   padding-top: 80px;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .present-title {
@@ -292,8 +269,6 @@ body {
 .ice-cards {
   padding-top: 80px;
   margin-bottom: 80px;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .ice-cards-list {
@@ -502,7 +477,7 @@ input [text] {
   color: #FCFCFC;
 }
 
-.contacts-container {
+.contacts-box {
   width: 1170px;
   margin: 0 auto;
 }
@@ -557,15 +532,12 @@ input [text] {
   color: #FCFCFC;
 }
 
-.footer-box {
+.footer-container {
   display: flex;
-  padding: 48px 0;
 }
 
 .documents-info {
   margin: 0 auto;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .documents-list {
@@ -588,8 +560,6 @@ input [text] {
 
 .about-site {
   width: 193px;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .logo-htmlacademy-image {
@@ -610,9 +580,14 @@ input [text] {
 
 /* стили для каталога */
 .breadcrumbs-list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.breadcrumbs-item {
+  margin-right: 28px;
 }
 
 .breadcrumbs-link {
@@ -644,11 +619,6 @@ input [text] {
   line-height: 20px;
 }
 
-.sorting-text {
-  width: 196px;
-  margin-right: 24px;
-}
-
 .filter-button {
   font-weight: bold;
   font-size: 14px;
@@ -656,13 +626,31 @@ input [text] {
   color: #2d3440
 }
 
+.button-pagination-box {
+  display: flex;
+  align-items: center;
+  padding: 41px 0;
+}
+
 .ice-pagination-list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.ice-pagination-item {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .ice-button-show-more {
+  width: 180px;
+  height: 44px;
+  margin-left: 495px;
+  margin-right: auto;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;

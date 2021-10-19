@@ -12,7 +12,7 @@
 <body>
   <header class="page-header">
     <div class="container header-container">
-      <a class="header-logo-link" href="index.html">
+      <a class="header-logo-link">
         <img class="header-logo-image" src="images/svg/logo-header.svg" width="137" height="56"
           alt="логотип компании Глейси" />
       </a>
@@ -32,16 +32,16 @@
       <a class="header-phone-link" href="tel:78005558628">+7 800 555-86-28</a>
       <ul class="menu-user-list">
         <li class="menu-user-item">
-          <a class="menu-user-link" href="#">
+          <a class="menu-user-link menu-user-search" href="#">
             <span class="visually-hidden">Поиск</span>
-            <img src="./images/svg/search.svg" width="18" height="18" alt="">
+            <img class="menu-user-image" src="./images/svg/search.svg" width="18" height="18" alt="">
           </a>
         </li>
         <li class="menu-user-item">
-          <a class="menu-user-link" href="#">Вход</a>
+          <a class="menu-user-link menu-user-entrance" href="#">Вход</a>
         </li>
         <li class="menu-user-item">
-          <a class="menu-user-link" href="#">
+          <a class="menu-user-link menu-user-basket" href="#">
             <span class="visually-hidden">Корзина.</span>
             <span>Пусто</span>
           </a>
@@ -50,7 +50,7 @@
     </div>
   </header>
   <main class="main-catalog">
-    <div class="container">
+    <div class="container ">
       <section class="breadcrumbs">
         <h2 class="visually-hidden">Навигация по страницам сайта.</h2>
         <ul class="breadcrumbs-list">
@@ -131,7 +131,7 @@
           <button class="filter-button" type="submit">Применить</button>
         </form>
       </section>
-      <section class="ice-cards">
+      <section class="ice-cards ice-cards-catalog">
         <h2 class="visually-hidden">Список товаров.</h2>
         <ul class="ice-cards-list">
           <li class="ice-cards-item">
@@ -140,8 +140,8 @@
             <h3 class="ice-cards-subtitle">Малинка</h3>
             <p class="ice-cards-text">Сливочное мороженое с малиновым джемом</p>
             <p class="ice-cards-price">310 ₽/кг</p>
-            <a href="#" aria-label="Корзина">
-              <img src="#" alt="корзина.">
+            <a class="ice-cards-link" href="#" aria-label="Корзина">
+              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
@@ -150,8 +150,8 @@
             <h3 class="ice-cards-subtitle">Фисташка</h3>
             <p class="ice-cards-text">Фисташковый пломбир с кусочками шоколада</p>
             <p class="ice-cards-price">340 ₽/кг</p>
-            <a href="#" aria-label="Корзина">
-              <img src="#" alt="корзина.">
+            <a class="ice-cards-link" href="#" aria-label="Корзина">
+              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
@@ -160,8 +160,8 @@
             <h3 class="ice-cards-subtitle">Черника</h3>
             <p class="ice-cards-text">Крем-брюле с черничным джемом</p>
             <p class="ice-cards-price">330 ₽/кг</p>
-            <a href="#" aria-label="Корзина">
-              <img src="#" alt="корзина.">
+            <a class="ice-cards-link" href="#" aria-label="Корзина">
+              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
@@ -170,8 +170,8 @@
             <h3 class="ice-cards-subtitle">Бабл-гам</h3>
             <p class="ice-cards-text">Ванильный пломбир со сладкой посыпкой</p>
             <p class="ice-cards-price">320 ₽/кг</p>
-            <a href="#" aria-label="Корзина">
-              <img src="#" alt="корзина.">
+            <a class="ice-cards-link" href="#" aria-label="Корзина">
+              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
@@ -180,8 +180,8 @@
             <h3 class="ice-cards-subtitle">Ежевика</h3>
             <p class="ice-cards-text">Сливочное мороженое с ежевичным джемом</p>
             <p class="ice-cards-price">330 ₽/кг</p>
-            <a href="#" aria-label="Корзина">
-              <img src="#" alt="корзина.">
+            <a class="ice-cards-link" href="#" aria-label="Корзина">
+              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
@@ -190,8 +190,8 @@
             <h3 class="ice-cards-subtitle">Банан</h3>
             <p class="ice-cards-text">Сливочный пломбир с банановым вкусом</p>
             <p class="ice-cards-price">340 ₽/кг</p>
-            <a href="#" aria-label="Корзина">
-              <img src="#" alt="корзина.">
+            <a class="ice-cards-link" href="#" aria-label="Корзина">
+              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
@@ -200,8 +200,8 @@
             <h3 class="ice-cards-subtitle">Шоколадка</h3>
             <p class="ice-cards-text">Классический шоколадный пломбир</p>
             <p class="ice-cards-price">270 ₽/кг</p>
-            <a href="#" aria-label="Корзина">
-              <img src="#" alt="корзина.">
+            <a class="ice-cards-link" href="#" aria-label="Корзина">
+              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
@@ -210,8 +210,8 @@
             <h3 class="ice-cards-subtitle">Клубничка</h3>
             <p class="ice-cards-text">Сливочный пломбир с клубничным вкусом</p>
             <p class="ice-cards-price">300 ₽/кг</p>
-            <a href="#" aria-label="Корзина">
-              <img src="#" alt="корзина.">
+            <a class="ice-cards-link" href="#" aria-label="Корзина">
+              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
@@ -220,8 +220,8 @@
             <h3 class="ice-cards-subtitle">Лимон</h3>
             <p class="ice-cards-text">Освежающий лимонный сорбет</p>
             <p class="ice-cards-price">310 ₽/кг</p>
-            <a href="#" aria-label="Корзина">
-              <img src="#" alt="корзина.">
+            <a class="ice-cards-link" href="#" aria-label="Корзина">
+              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
@@ -230,8 +230,8 @@
             <h3 class="ice-cards-subtitle">Ментол</h3>
             <p class="ice-cards-text">Сливочный пломбир с ментоловым сиропом</p>
             <p class="ice-cards-price">320 ₽/кг</p>
-            <a href="#" aria-label="Корзина">
-              <img src="#" alt="корзина.">
+            <a class="ice-cards-link" href="#" aria-label="Корзина">
+              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
@@ -240,8 +240,8 @@
             <h3 class="ice-cards-subtitle">Орешек</h3>
             <p class="ice-cards-text">Фисташковый пломбир с шоколадным сиропом</p>
             <p class="ice-cards-price">360 ₽/кг</p>
-            <a href="#" aria-label="Корзина">
-              <img src="#" alt="корзина.">
+            <a class="ice-cards-link" href="#" aria-label="Корзина">
+              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
             </a>
           </li>
           <li class="ice-cards-item">
@@ -250,8 +250,8 @@
             <h3 class="ice-cards-subtitle">Крем-брюле</h3>
             <p class="ice-cards-text">Классическое крем-брюле</p>
             <p class="ice-cards-price">280 ₽/кг</p>
-            <a href="#" aria-label="Корзина">
-              <img src="#" alt="корзина.">
+            <a class="ice-cards-link" href="#" aria-label="Корзина">
+              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
             </a>
           </li>
         </ul>

@@ -12,7 +12,7 @@
 <body>
   <header class="page-header">
     <div class="container header-container">
-      <a class="header-logo-link">
+      <a class="header-logo-link" href="index.html">
         <img class="header-logo-image" src="images/svg/logo-header.svg" width="137" height="56"
           alt="логотип компании Глейси" />
       </a>
@@ -69,61 +69,76 @@
       <section class="filter-cards">
         <h2 class="visually-hidden">Фильтр выбора товара.</h2>
         <form class="sorting-form" action="https://echo.htmlacademy.ru/" method="GET">
-          <fieldset>
+          <fieldset class="field-sorting">
             <legend class="sorting-text">Сортировка:</legend>
-            <select name="sorting" id="sorting">
+            <select class="sorting-select" name="sorting" id="sorting">
               <option value="popular">по популярности</option>
             </select>
           </fieldset>
-          <fieldset>
-            <legend>Цена: 100 ₽ – 500 ₽</legend>
+          <fieldset class="field-rang">
+            <legend class="rang-text">Цена: 100 ₽ – 500 ₽</legend>
             <div class="rang"></div>
           </fieldset>
-          <fieldset>
+          <fieldset class="field-fat">
             <legend class="fat-text">Жирность:</legend>
             <ul class="fat-list">
               <li class="fat-item">
-                <label><input type="radio" name="fat" value="0%"> 0%</label>
+                <label>
+                  <input type="radio" name="fat" value="0%">
+                  0%
+                </label>
               </li>
               <li class="fat-item">
-                <label><input type="radio" name="fat" value="before-10%" checked> до 10%</label>
+                <label>
+                  <input type="radio" name="fat" value="before-10%" checked>
+                  до 10%
+                </label>
               </li>
               <li class="fat-item">
-                <label><input type="radio" name="fat" value="before-30%"> до 30%</label>
+                <label>
+                  <input type="radio" name="fat" value="before-30%">
+                  до 30%
+                </label>
               </li>
               <li class="fat-item">
-                <label><input type="radio" name="fat" value="after-30 %"> выше 30%</label>
+                <label>
+                  <input type="radio" name="fat" value="after-30 %">
+                  выше 30%
+                </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="field-additive">
             <legend class="additive-text">Наполнители:</legend>
             <ul class="additive-list">
-              <li class="additiv-item">
+              <li class="additive-item">
                 <label>
                   <input type="checkbox" name="choclate" value="choclate" checked>
                   шоколадные
                 </label>
               </li>
-              <li class="additiv-item">
+              <li class="additive-item">
                 <label>
-                  <input type="checkbox" name="sugar" value="sugar" checked> сахарные
-                  присыпки
+                  <input type="checkbox" name="sugar" value="sugar" checked>
+                  сахарные присыпки
                 </label>
               </li>
-              <li class="additiv-item">
+              <li class="additive-item">
                 <label>
-                  <input type="checkbox" name="frute" value="frute"> фрукты
+                  <input type="checkbox" name="frute" value="frute">
+                  фрукты
                 </label>
               </li>
-              <li class="additiv-item">
+              <li class="additive-item">
                 <label>
-                  <input type="checkbox" name="syrup" value="syrup"> сиропы
+                  <input type="checkbox" name="syrup" value="syrup">
+                  сиропы
                 </label>
               </li>
-              <li class="additiv-item">
+              <li class="additive-item">
                 <label>
-                  <input type="checkbox" name="jam" value="jam"> джемы
+                  <input type="checkbox" name="jam" value="jam">
+                  джемы
                 </label>
               </li>
             </ul>
@@ -137,122 +152,146 @@
           <li class="ice-cards-item">
             <img class="ice-cards-image" src="images/catalog/malina.png" width="270" height="184"
               alt="мороженное со вкусом малины">
-            <h3 class="ice-cards-subtitle">Малинка</h3>
-            <p class="ice-cards-text">Сливочное мороженое с малиновым джемом</p>
-            <p class="ice-cards-price">310 ₽/кг</p>
-            <a class="ice-cards-link" href="#" aria-label="Корзина">
-              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
-            </a>
+            <div class="fon">
+              <h3 class="ice-cards-subtitle">Малинка</h3>
+              <p class="ice-cards-text">Сливочное мороженое с малиновым джемом</p>
+              <p class="ice-cards-price">310 ₽/кг</p>
+              <a class="ice-cards-link" href="#" aria-label="Корзина">
+                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+              </a>
+            </div>
           </li>
           <li class="ice-cards-item">
             <img class="ice-cards-image" src="images/catalog/fistashka.png" width="270" height="184"
               alt="мороженное со вкусом фисташки">
-            <h3 class="ice-cards-subtitle">Фисташка</h3>
-            <p class="ice-cards-text">Фисташковый пломбир с кусочками шоколада</p>
-            <p class="ice-cards-price">340 ₽/кг</p>
-            <a class="ice-cards-link" href="#" aria-label="Корзина">
-              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
-            </a>
+            <div class="fon">
+              <h3 class="ice-cards-subtitle">Фисташка</h3>
+              <p class="ice-cards-text">Фисташковый пломбир с кусочками шоколада</p>
+              <p class="ice-cards-price">340 ₽/кг</p>
+              <a class="ice-cards-link" href="#" aria-label="Корзина">
+                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+              </a>
+            </div>
           </li>
           <li class="ice-cards-item">
             <img class="ice-cards-image" src="images/catalog/chernika.png" width="270" height="184"
               alt="мороженное со вкусом черники">
-            <h3 class="ice-cards-subtitle">Черника</h3>
-            <p class="ice-cards-text">Крем-брюле с черничным джемом</p>
-            <p class="ice-cards-price">330 ₽/кг</p>
-            <a class="ice-cards-link" href="#" aria-label="Корзина">
-              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
-            </a>
+            <div class="fon">
+              <h3 class="ice-cards-subtitle">Черника</h3>
+              <p class="ice-cards-text">Крем-брюле с черничным джемом</p>
+              <p class="ice-cards-price">330 ₽/кг</p>
+              <a class="ice-cards-link" href="#" aria-label="Корзина">
+                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+              </a>
+            </div>
           </li>
           <li class="ice-cards-item">
             <img class="ice-cards-image" src="images/catalog/buble-gum.png" width="270" height="184"
               alt="мороженное со вкусом бабл-гам">
-            <h3 class="ice-cards-subtitle">Бабл-гам</h3>
-            <p class="ice-cards-text">Ванильный пломбир со сладкой посыпкой</p>
-            <p class="ice-cards-price">320 ₽/кг</p>
-            <a class="ice-cards-link" href="#" aria-label="Корзина">
-              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
-            </a>
+            <div class="fon">
+              <h3 class="ice-cards-subtitle">Бабл-гам</h3>
+              <p class="ice-cards-text">Ванильный пломбир со сладкой посыпкой</p>
+              <p class="ice-cards-price">320 ₽/кг</p>
+              <a class="ice-cards-link" href="#" aria-label="Корзина">
+                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+              </a>
+            </div>
           </li>
           <li class="ice-cards-item">
             <img class="ice-cards-image" src="images/catalog/ejevika.png" width="270" height="184"
               alt="мороженное со вкусом ежевики">
-            <h3 class="ice-cards-subtitle">Ежевика</h3>
-            <p class="ice-cards-text">Сливочное мороженое с ежевичным джемом</p>
-            <p class="ice-cards-price">330 ₽/кг</p>
-            <a class="ice-cards-link" href="#" aria-label="Корзина">
-              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
-            </a>
+            <div class="fon">
+              <h3 class="ice-cards-subtitle">Ежевика</h3>
+              <p class="ice-cards-text">Сливочное мороженое с ежевичным джемом</p>
+              <p class="ice-cards-price">330 ₽/кг</p>
+              <a class="ice-cards-link" href="#" aria-label="Корзина">
+                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+              </a>
+            </div>
           </li>
           <li class="ice-cards-item">
             <img class="ice-cards-image" src="images/catalog/banana.png" width="270" height="184"
               alt="мороженное со вкусом банана">
-            <h3 class="ice-cards-subtitle">Банан</h3>
-            <p class="ice-cards-text">Сливочный пломбир с банановым вкусом</p>
-            <p class="ice-cards-price">340 ₽/кг</p>
-            <a class="ice-cards-link" href="#" aria-label="Корзина">
-              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
-            </a>
+            <div class="fon">
+              <h3 class="ice-cards-subtitle">Банан</h3>
+              <p class="ice-cards-text">Сливочный пломбир с банановым вкусом</p>
+              <p class="ice-cards-price">340 ₽/кг</p>
+              <a class="ice-cards-link" href="#" aria-label="Корзина">
+                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+              </a>
+            </div>
           </li>
           <li class="ice-cards-item">
             <img class="ice-cards-image" src="images/catalog/choclate.png" width="270" height="184"
               alt="мороженное со вкусом шоколада">
-            <h3 class="ice-cards-subtitle">Шоколадка</h3>
-            <p class="ice-cards-text">Классический шоколадный пломбир</p>
-            <p class="ice-cards-price">270 ₽/кг</p>
-            <a class="ice-cards-link" href="#" aria-label="Корзина">
-              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
-            </a>
+            <div class="fon">
+              <h3 class="ice-cards-subtitle">Шоколадка</h3>
+              <p class="ice-cards-text">Классический шоколадный пломбир</p>
+              <p class="ice-cards-price">270 ₽/кг</p>
+              <a class="ice-cards-link" href="#" aria-label="Корзина">
+                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+              </a>
+            </div>
           </li>
           <li class="ice-cards-item">
             <img class="ice-cards-image" src="images/catalog/klubnika.png" width="270" height="184"
               alt="мороженное со вкусом клубники">
-            <h3 class="ice-cards-subtitle">Клубничка</h3>
-            <p class="ice-cards-text">Сливочный пломбир с клубничным вкусом</p>
-            <p class="ice-cards-price">300 ₽/кг</p>
-            <a class="ice-cards-link" href="#" aria-label="Корзина">
-              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
-            </a>
+            <div class="fon">
+              <h3 class="ice-cards-subtitle">Клубничка</h3>
+              <p class="ice-cards-text">Сливочный пломбир с клубничным вкусом</p>
+              <p class="ice-cards-price">300 ₽/кг</p>
+              <a class="ice-cards-link" href="#" aria-label="Корзина">
+                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+              </a>
+            </div>
           </li>
           <li class="ice-cards-item">
             <img class="ice-cards-image" src="images/catalog/limon.png" width="270" height="184"
               alt="мороженное со вкусом лимона">
-            <h3 class="ice-cards-subtitle">Лимон</h3>
-            <p class="ice-cards-text">Освежающий лимонный сорбет</p>
-            <p class="ice-cards-price">310 ₽/кг</p>
-            <a class="ice-cards-link" href="#" aria-label="Корзина">
-              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
-            </a>
+            <div class="fon">
+              <h3 class="ice-cards-subtitle">Лимон</h3>
+              <p class="ice-cards-text">Освежающий лимонный сорбет</p>
+              <p class="ice-cards-price">310 ₽/кг</p>
+              <a class="ice-cards-link" href="#" aria-label="Корзина">
+                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+              </a>
+            </div>
           </li>
           <li class="ice-cards-item">
             <img class="ice-cards-image" src="images/catalog/mentol.png" width="270" height="184"
               alt="мороженное со вкусом ментола">
-            <h3 class="ice-cards-subtitle">Ментол</h3>
-            <p class="ice-cards-text">Сливочный пломбир с ментоловым сиропом</p>
-            <p class="ice-cards-price">320 ₽/кг</p>
-            <a class="ice-cards-link" href="#" aria-label="Корзина">
-              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
-            </a>
+            <div class="fon">
+              <h3 class="ice-cards-subtitle">Ментол</h3>
+              <p class="ice-cards-text">Сливочный пломбир с ментоловым сиропом</p>
+              <p class="ice-cards-price">320 ₽/кг</p>
+              <a class="ice-cards-link" href="#" aria-label="Корзина">
+                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+              </a>
+            </div>
           </li>
           <li class="ice-cards-item">
             <img class="ice-cards-image" src="images/catalog/fistashka.png" width="270" height="184"
               alt="мороженное со вкусом фисташки с шоколадным сиропом">
-            <h3 class="ice-cards-subtitle">Орешек</h3>
-            <p class="ice-cards-text">Фисташковый пломбир с шоколадным сиропом</p>
-            <p class="ice-cards-price">360 ₽/кг</p>
-            <a class="ice-cards-link" href="#" aria-label="Корзина">
-              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
-            </a>
+            <div class="fon">
+              <h3 class="ice-cards-subtitle">Орешек</h3>
+              <p class="ice-cards-text">Фисташковый пломбир с шоколадным сиропом</p>
+              <p class="ice-cards-price">360 ₽/кг</p>
+              <a class="ice-cards-link" href="#" aria-label="Корзина">
+                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+              </a>
+            </div>
           </li>
           <li class="ice-cards-item">
             <img class="ice-cards-image" src="images/catalog/cream-brule.png" width="270" height="184"
               alt="мороженное со вкусом крем-брюле">
-            <h3 class="ice-cards-subtitle">Крем-брюле</h3>
-            <p class="ice-cards-text">Классическое крем-брюле</p>
-            <p class="ice-cards-price">280 ₽/кг</p>
-            <a class="ice-cards-link" href="#" aria-label="Корзина">
-              <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
-            </a>
+            <div class="fon">
+              <h3 class="ice-cards-subtitle">Крем-брюле</h3>
+              <p class="ice-cards-text">Классическое крем-брюле</p>
+              <p class="ice-cards-price">280 ₽/кг</p>
+              <a class="ice-cards-link" href="#" aria-label="Корзина">
+                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+              </a>
+            </div>
           </li>
         </ul>
         <div class="button-pagination-box">
@@ -261,6 +300,7 @@
             <li class="ice-pagination-item">
               <a class="ice-pagination-link ice-pagination-prev ice-pagination-disabled">
                 <span class="visually-hidden">Предыдущий товар</span>
+                <img class="prev-image" src="./images/svg/arrow-left.svg" width="16" height="16" alt="">
               </a>
             </li>
             <li class="ice-pagination-item">
@@ -281,6 +321,7 @@
             <li class="ice-pagination-item">
               <a class="ice-pagination-link pagination-next" href="#">
                 <span class="visually-hidden">Следующий товар</span>
+                <img class="next-image" src="./images/svg/arrow-right.svg" width="16" height="16" alt="">
               </a>
             </li>
           </ul>

@@ -22,7 +22,7 @@
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Оплата и доставка</a>
+            <a class="navigation-link" href="#">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О компании</a>
@@ -34,14 +34,33 @@
         <li class="menu-user-item">
           <a class="menu-user-link menu-user-search" href="#">
             <span class="visually-hidden">Поиск</span>
-            <img class="menu-user-image" src="./images/svg/search.svg" width="18" height="18" alt="">
+            <svg class="menu-user-search-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.6634 7.33c0-2.5773 2.0893-4.6666 4.6667-4.6666 2.5773 0 4.6666 2.0893 4.6666 4.6667 0 1.2573-.4972 2.3984-1.3057 3.2375a.6833.6833 0 0 0-.1234.1235c-.8391.8085-1.9803 1.3056-3.2375 1.3056-2.5774 0-4.6667-2.0893-4.6667-4.6666Zm8.4118 4.688a5.9747 5.9747 0 0 1-3.7451 1.3121c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6a5.9745 5.9745 0 0 1-1.3121 3.7451l2.4501 2.4501a.6667.6667 0 1 1-.9428.9429l-2.4501-2.4502Z"
+                fill="#2D3440" />
+            </svg>
           </a>
         </li>
         <li class="menu-user-item">
-          <a class="menu-user-link menu-user-entrance" href="#">Вход</a>
+          <a class="menu-user-link menu-user-entrance" href="#">
+            <svg class="menu-user-icon-entrance" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9 1.6667A.6667.6667 0 0 1 9.6667 1h2.6666a1.9997 1.9997 0 0 1 2 2v9.3333a1.9996 1.9996 0 0 1-2 2H9.6667a.6666.6666 0 1 1 0-1.3333h2.6666a.6664.6664 0 0 0 .4714-.1953.6664.6664 0 0 0 .1953-.4714V3a.6664.6664 0 0 0-.6667-.6667H9.6667A.6667.6667 0 0 1 9 1.6667ZM5.8619 3.8619a.6667.6667 0 0 1 .9428 0l3.3291 3.3291a.6624.6624 0 0 1 .129.177.664.664 0 0 1 .0705.2987.6636.6636 0 0 1-.1998.4759l-3.3288 3.3288a.6667.6667 0 1 1-.9428-.9428L8.057 8.3333H1.6668a.6667.6667 0 1 1 0-1.3333h6.3905L5.8619 4.8047a.6667.6667 0 0 1 0-.9428Z"
+                fill="#2D3440" />
+            </svg>
+            Вход
+          </a>
         </li>
         <li class="menu-user-item">
           <a class="menu-user-link menu-user-basket" href="#">
+            <svg class="menu-user-icon-basket" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z"
+                fill="#2D3440" />
+            </svg>
             <span class="visually-hidden">Корзина.</span>
             <span>Пусто</span>
           </a>
@@ -150,146 +169,206 @@
         <h2 class="visually-hidden">Список товаров.</h2>
         <ul class="ice-cards-list">
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="images/catalog/malina.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/malina.png" width="270" height="184"
               alt="мороженное со вкусом малины">
             <div class="fon">
               <h3 class="ice-cards-subtitle">Малинка</h3>
               <p class="ice-cards-text">Сливочное мороженое с малиновым джемом</p>
               <p class="ice-cards-price">310 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
-                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+                <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#FCFCFC" />
+                </svg>
               </a>
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="images/catalog/fistashka.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/fistashka.png" width="270" height="184"
               alt="мороженное со вкусом фисташки">
             <div class="fon">
               <h3 class="ice-cards-subtitle">Фисташка</h3>
               <p class="ice-cards-text">Фисташковый пломбир с кусочками шоколада</p>
               <p class="ice-cards-price">340 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
-                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+                <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#FCFCFC" />
+                </svg>
               </a>
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="images/catalog/chernika.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/chernika.png" width="270" height="184"
               alt="мороженное со вкусом черники">
             <div class="fon">
               <h3 class="ice-cards-subtitle">Черника</h3>
               <p class="ice-cards-text">Крем-брюле с черничным джемом</p>
               <p class="ice-cards-price">330 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
-                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+                <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#FCFCFC" />
+                </svg>
               </a>
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="images/catalog/buble-gum.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/buble-gum.png" width="270" height="184"
               alt="мороженное со вкусом бабл-гам">
             <div class="fon">
               <h3 class="ice-cards-subtitle">Бабл-гам</h3>
               <p class="ice-cards-text">Ванильный пломбир со сладкой посыпкой</p>
               <p class="ice-cards-price">320 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
-                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+                <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#FCFCFC" />
+                </svg>
               </a>
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="images/catalog/ejevika.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/ejevika.png" width="270" height="184"
               alt="мороженное со вкусом ежевики">
             <div class="fon">
               <h3 class="ice-cards-subtitle">Ежевика</h3>
               <p class="ice-cards-text">Сливочное мороженое с ежевичным джемом</p>
               <p class="ice-cards-price">330 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
-                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+                <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#FCFCFC" />
+                </svg>
               </a>
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="images/catalog/banana.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/banana.png" width="270" height="184"
               alt="мороженное со вкусом банана">
             <div class="fon">
               <h3 class="ice-cards-subtitle">Банан</h3>
               <p class="ice-cards-text">Сливочный пломбир с банановым вкусом</p>
               <p class="ice-cards-price">340 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
-                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+                <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#FCFCFC" />
+                </svg>
               </a>
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="images/catalog/choclate.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/choclate.png" width="270" height="184"
               alt="мороженное со вкусом шоколада">
             <div class="fon">
               <h3 class="ice-cards-subtitle">Шоколадка</h3>
               <p class="ice-cards-text">Классический шоколадный пломбир</p>
               <p class="ice-cards-price">270 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
-                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+                <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#FCFCFC" />
+                </svg>
               </a>
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="images/catalog/klubnika.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/klubnika.png" width="270" height="184"
               alt="мороженное со вкусом клубники">
             <div class="fon">
               <h3 class="ice-cards-subtitle">Клубничка</h3>
               <p class="ice-cards-text">Сливочный пломбир с клубничным вкусом</p>
               <p class="ice-cards-price">300 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
-                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+                <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#FCFCFC" />
+                </svg>
               </a>
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="images/catalog/limon.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/limon.png" width="270" height="184"
               alt="мороженное со вкусом лимона">
             <div class="fon">
               <h3 class="ice-cards-subtitle">Лимон</h3>
               <p class="ice-cards-text">Освежающий лимонный сорбет</p>
               <p class="ice-cards-price">310 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
-                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+                <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#FCFCFC" />
+                </svg>
               </a>
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="images/catalog/mentol.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/mentol.png" width="270" height="184"
               alt="мороженное со вкусом ментола">
             <div class="fon">
               <h3 class="ice-cards-subtitle">Ментол</h3>
               <p class="ice-cards-text">Сливочный пломбир с ментоловым сиропом</p>
               <p class="ice-cards-price">320 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
-                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+                <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#FCFCFC" />
+                </svg>
               </a>
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="images/catalog/fistashka.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/fistashka.png" width="270" height="184"
               alt="мороженное со вкусом фисташки с шоколадным сиропом">
             <div class="fon">
               <h3 class="ice-cards-subtitle">Орешек</h3>
               <p class="ice-cards-text">Фисташковый пломбир с шоколадным сиропом</p>
               <p class="ice-cards-price">360 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
-                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+                <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#FCFCFC" />
+                </svg>
               </a>
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="images/catalog/cream-brule.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/cream-brule.png" width="270" height="184"
               alt="мороженное со вкусом крем-брюле">
             <div class="fon">
               <h3 class="ice-cards-subtitle">Крем-брюле</h3>
               <p class="ice-cards-text">Классическое крем-брюле</p>
               <p class="ice-cards-price">280 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
-                <img class="ice-cards-icon" src="./images/svg/cart-white.png" alt="корзина.">
+                <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#FCFCFC" />
+                </svg>
               </a>
             </div>
           </li>
@@ -303,8 +382,8 @@
                 <img class="prev-image" src="./images/svg/arrow-left.svg" width="16" height="16" alt="">
               </a>
             </li>
-            <li class="ice-pagination-item">
-              <a class="ice-pagination-link ice-pagination-current" href="#">1</a>
+            <li class="ice-pagination-item ice-pagination-current">
+              <a class="ice-pagination-link" href="#">1</a>
             </li>
             <li class="ice-pagination-item">
               <a class="ice-pagination-link" href="#">2</a>

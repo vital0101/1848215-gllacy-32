@@ -42,10 +42,10 @@
         <li class="menu-user-item">
           <a class="menu-user-link menu-user-basket" href="#">
             <span class="visually-hidden">Корзина.</span>
-            <svg class="menu-user-basket-full" width="18" height="18" viewBox="0 0 18 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="menu-user-basket-full" aria-hidden="true" focusable="false" width="18" height="18"
+              viewBox="0 0 18 18" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M0.645874 2.15641C0.645874 1.78822 0.944351 1.48975 1.31254 1.48975H3.91999C4.23774 1.48975 4.51133 1.714 4.57369 2.02557L5.11879 4.74906H15.6535C15.8522 4.74906 16.0405 4.83767 16.1672 4.99076C16.2938 5.14384 16.3456 5.34544 16.3084 5.54061L15.2654 11.0097L15.2644 11.0147L15.2644 11.0147C15.1743 11.4683 14.9276 11.8757 14.5673 12.1657C14.209 12.4542 13.761 12.6082 13.3011 12.601H6.97639C6.51652 12.6082 6.06854 12.4542 5.71016 12.1657C5.35008 11.8759 5.10338 11.4686 5.0132 11.0153L5.01308 11.0147L3.92432 5.57495C3.91985 5.5567 3.91612 5.53816 3.91319 5.51936L3.37353 2.82308H1.31254C0.944351 2.82308 0.645874 2.5246 0.645874 2.15641ZM6.5285 13.8757C5.80055 13.8757 5.21043 14.4658 5.21043 15.1938C5.21043 15.9217 5.80055 16.5118 6.5285 16.5118C7.25644 16.5118 7.84656 15.9217 7.84656 15.1938C7.84656 14.4658 7.25644 13.8757 6.5285 13.8757ZM13.6985 13.8757C12.9705 13.8757 12.3804 14.4658 12.3804 15.1938C12.3804 15.9217 12.9705 16.5118 13.6985 16.5118C14.4264 16.5118 15.0166 15.9217 15.0166 15.1938C15.0166 14.4658 14.4264 13.8757 13.6985 13.8757Z"
+                d="M.65 2.16c0-.37.3-.67.66-.67h2.61c.32 0 .6.22.65.54l.55 2.72h10.53a.67.67 0 0 1 .66.8L15.27 11a1.97 1.97 0 0 1-1.97 1.6H6.98A1.97 1.97 0 0 1 5 11L3.92 5.57v-.05l-.55-2.7H1.31a.67.67 0 0 1-.66-.66Zm5.88 11.72a1.32 1.32 0 1 0 0 2.63 1.32 1.32 0 0 0 0-2.63Zm7.17 0a1.32 1.32 0 1 0 0 2.63 1.32 1.32 0 0 0 0-2.63Z"
                 fill="#2D3440" />
             </svg>
             <span>2 товара</span>
@@ -80,7 +80,7 @@
               </li>
             </ul>
             <div class="oder-wrapper">
-              <button class="button-oder-cart" type="button">Оформить заказ</button>
+              <button class="button button-oder-cart" type="button">Оформить заказ</button>
               <span class="oder-sum">Итого: 790 ₽</span>
             </div>
           </div>
@@ -175,7 +175,7 @@
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="sugar" value="sugar" checked>
                   <span class="control-mark"></span>
-                  <span class="control-label">сахарные присыпки</span>
+                  <span class="control-label">сахарные пoсыпки</span>
                 </label>
               </li>
               <li class="additive-item">
@@ -211,7 +211,9 @@
             <img class="ice-cards-image" src="./images/catalog/malina.png" width="270" height="184"
               alt="мороженное со вкусом малины">
             <div class="fon">
-              <h3 class="ice-cards-subtitle">Малинка</h3>
+              <h3 class="ice-cards-subtitle">
+                <a href="#">Малинка</a>
+              </h3>
               <p class="ice-cards-text">Сливочное мороженое с малиновым джемом</p>
               <p class="ice-cards-price">310 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
@@ -228,7 +230,9 @@
             <img class="ice-cards-image" src="./images/catalog/fistashka.png" width="270" height="184"
               alt="мороженное со вкусом фисташки">
             <div class="fon">
-              <h3 class="ice-cards-subtitle">Фисташка</h3>
+              <h3 class="ice-cards-subtitle">
+                <a href="#">Фисташка</a>
+              </h3>
               <p class="ice-cards-text">Фисташковый пломбир с кусочками шоколада</p>
               <p class="ice-cards-price">340 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
@@ -245,8 +249,10 @@
             <img class="ice-cards-image" src="./images/catalog/chernika.png" width="270" height="184"
               alt="мороженное со вкусом черники">
             <div class="fon">
-              <h3 class="ice-cards-subtitle">Черника</h3>
-              <p class="ice-cards-text">Крем-брюле с черничным джемом</p>
+              <h3 class="ice-cards-subtitle">
+                <a href="#">Черника</a>
+              </h3>
+              <p class="ice-cards-text">Крем-брюле с&nbsp;черничным джемом</p>
               <p class="ice-cards-price">330 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
                 <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
@@ -262,8 +268,10 @@
             <img class="ice-cards-image" src="./images/catalog/buble-gum.png" width="270" height="184"
               alt="мороженное со вкусом бабл-гам">
             <div class="fon">
-              <h3 class="ice-cards-subtitle">Бабл-гам</h3>
-              <p class="ice-cards-text">Ванильный пломбир со сладкой посыпкой</p>
+              <h3 class="ice-cards-subtitle">
+                <a href="#">Бабл-гам</a>
+              </h3>
+              <p class="ice-cards-text">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
               <p class="ice-cards-price">320 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
                 <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
@@ -279,7 +287,9 @@
             <img class="ice-cards-image" src="./images/catalog/ejevika.png" width="270" height="184"
               alt="мороженное со вкусом ежевики">
             <div class="fon">
-              <h3 class="ice-cards-subtitle">Ежевика</h3>
+              <h3 class="ice-cards-subtitle">
+                <a href="#">Ежевика</a>
+              </h3>
               <p class="ice-cards-text">Сливочное мороженое с ежевичным джемом</p>
               <p class="ice-cards-price">330 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
@@ -296,8 +306,10 @@
             <img class="ice-cards-image" src="./images/catalog/banana.png" width="270" height="184"
               alt="мороженное со вкусом банана">
             <div class="fon">
-              <h3 class="ice-cards-subtitle">Банан</h3>
-              <p class="ice-cards-text">Сливочный пломбир с банановым вкусом</p>
+              <h3 class="ice-cards-subtitle">
+                <a href="#">Банан</a>
+              </h3>
+              <p class="ice-cards-text">Сливочный пломбир с&nbsp;банановым вкусом</p>
               <p class="ice-cards-price">340 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
                 <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
@@ -313,7 +325,9 @@
             <img class="ice-cards-image" src="./images/catalog/choclate.png" width="270" height="184"
               alt="мороженное со вкусом шоколада">
             <div class="fon">
-              <h3 class="ice-cards-subtitle">Шоколадка</h3>
+              <h3 class="ice-cards-subtitle">
+                <a href="#">Шоколадка</a>
+              </h3>
               <p class="ice-cards-text">Классический шоколадный пломбир</p>
               <p class="ice-cards-price">270 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
@@ -330,8 +344,10 @@
             <img class="ice-cards-image" src="./images/catalog/klubnika.png" width="270" height="184"
               alt="мороженное со вкусом клубники">
             <div class="fon">
-              <h3 class="ice-cards-subtitle">Клубничка</h3>
-              <p class="ice-cards-text">Сливочный пломбир с клубничным вкусом</p>
+              <h3 class="ice-cards-subtitle">
+                <a href="#">Клубничка</a>
+              </h3>
+              <p class="ice-cards-text">Сливочный пломбир с&nbsp;клубничным вкусом</p>
               <p class="ice-cards-price">300 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
                 <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
@@ -347,7 +363,9 @@
             <img class="ice-cards-image" src="./images/catalog/limon.png" width="270" height="184"
               alt="мороженное со вкусом лимона">
             <div class="fon">
-              <h3 class="ice-cards-subtitle">Лимон</h3>
+              <h3 class="ice-cards-subtitle">
+                <a href="#">Лимон</a>
+              </h3>
               <p class="ice-cards-text">Освежающий лимонный сорбет</p>
               <p class="ice-cards-price">310 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
@@ -364,8 +382,10 @@
             <img class="ice-cards-image" src="./images/catalog/mentol.png" width="270" height="184"
               alt="мороженное со вкусом ментола">
             <div class="fon">
-              <h3 class="ice-cards-subtitle">Ментол</h3>
-              <p class="ice-cards-text">Сливочный пломбир с ментоловым сиропом</p>
+              <h3 class="ice-cards-subtitle">
+                <a href="#">Ментол</a>
+              </h3>
+              <p class="ice-cards-text">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
               <p class="ice-cards-price">320 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
                 <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
@@ -378,10 +398,12 @@
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/fistashka.png" width="270" height="184"
+            <img class="ice-cards-image" src="./images/catalog/nut.png" width="270" height="184"
               alt="мороженное со вкусом фисташки с шоколадным сиропом">
             <div class="fon">
-              <h3 class="ice-cards-subtitle">Орешек</h3>
+              <h3 class="ice-cards-subtitle">
+                <a href="#">Орешек</a>
+              </h3>
               <p class="ice-cards-text">Фисташковый пломбир с шоколадным сиропом</p>
               <p class="ice-cards-price">360 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
@@ -398,8 +420,10 @@
             <img class="ice-cards-image" src="./images/catalog/cream-brule.png" width="270" height="184"
               alt="мороженное со вкусом крем-брюле">
             <div class="fon">
-              <h3 class="ice-cards-subtitle">Крем-брюле</h3>
-              <p class="ice-cards-text">Классическое крем-брюле</p>
+              <h3 class="ice-cards-subtitle">
+                <a href="#">Крем-брюле</a>
+              </h3>
+              <p class="ice-cards-text">Классическое<br>крем-брюле</p>
               <p class="ice-cards-price">280 ₽/кг</p>
               <a class="ice-cards-link" href="#" aria-label="Корзина">
                 <svg aria-hidden="true" focusable="false" width="15" height="14" fill="none"
@@ -413,13 +437,13 @@
           </li>
         </ul>
         <div class="button-pagination-box">
-          <button class="ice-button-show-more" type="button">Показать еще</button>
+          <button class="button ice-button-show-more" type="button">Показать ещё</button>
           <ul class="ice-pagination-list">
             <li class="ice-pagination-item">
-              <a class="ice-pagination-link ice-pagination-prev ice-pagination-prev-disabled" href="#">
+              <a class="ice-pagination-link ice-pagination-prev ice-pagination-disabled" href="#">
                 <span class="visually-hidden">Предыдущий товар</span>
-                <svg class="pagination-prev-image" width="16" height="16" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg class="pagination-prev-image" aria-hidden="true" focusable="false" width="16" height="16"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M9.8033 3.8051a.665.665 0 1 0-.9405-.9404l-4.668 4.668a.665.665 0 0 0-.0026.938l.0035.0035 4.6681 4.6681a.665.665 0 1 0 .9405-.9405L5.6054 8.003l4.1978-4.1979Z"
                     fill="#2D3440" />
@@ -444,8 +468,8 @@
             <li class="ice-pagination-item">
               <a class="ice-pagination-link ice-pagination-next" href="#">
                 <span class="visually-hidden">Следующий товар</span>
-                <svg class="pagination-next-image" width="16" height="16" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg class="pagination-next-image" aria-hidden="true" focusable="false" width="16" height="16"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M9.8033 3.8051a.665.665 0 1 0-.9405-.9404l-4.668 4.668a.665.665 0 0 0-.0026.938l.0035.0035 4.6681 4.6681a.665.665 0 1 0 .9405-.9405L5.6054 8.003l4.1978-4.1979Z"
                     fill="#2D3440" />
@@ -486,10 +510,10 @@
             <a class="documents-link documents-link-current" href="#">Для поставщиков</a>
           </li>
           <li class="documents-item">
-            <a class="documents-link" href="#">О производстве</a>
+            <a class="documents-link" href="#">Наши документы</a>
           </li>
           <li class="documents-item">
-            <a class="documents-link" href="#">Наши документы</a>
+            <a class="documents-link" href="#">О производстве</a>
           </li>
           <li class="documents-item">
             <a class="documents-link" href="#">Экологические стандарты</a>

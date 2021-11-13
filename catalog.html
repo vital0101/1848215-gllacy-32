@@ -33,36 +33,59 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <span class="visually-hidden">Переход на страницу каталога</span>
+            <span class="visually-hidden">Страница каталога.</span>
             <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
+            <!-- добавить класс popover-open к <div> для открытия поповера
+                 добавить класс popover-link-selected к выбранному пункту -->
+            <div class="popover popover-catalog">
+              <div class="popover-content">
+                <ul class="popover-catalog-list">
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link popover-catalog-link-new" href="#">Новинки</a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link popover-link-selected" href="#">Щербеты</a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="navigation-item">
-            <span class="visually-hidden">Доставка и оплата</span>
+            <span class="visually-hidden">Доставка и оплата.</span>
             <a class="navigation-link" href="#">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
-            <span class="visually-hidden">О компании</span>
+            <span class="visually-hidden">О компании.</span>
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
       </nav>
       <a class="header-phone-link" href="tel:78005558628">
-        <span class="visually-hidden">Контактный телефон</span>
+        <span class="visually-hidden">Контактный телефон.</span>
         +7 800 555-86-28</a>
       <ul class="menu-user-list">
         <li class="menu-user-item">
           <a class="menu-user-link menu-user-search" href="#">
-            <span class="visually-hidden">Поиск по сайту</span>
+            <span class="visually-hidden">Поиск по сайту.</span>
           </a>
         </li>
         <li class="menu-user-item">
           <a class="menu-user-link menu-user-login" href="#">
-            <span class="visually-hidden">Вход в личный кабинет</span>
+            <span class="visually-hidden">Вход в личный кабинет.</span>
             Вход</a>
         </li>
         <li class="menu-user-item">
           <a class="menu-user-link menu-user-basket" href="#">
-            <span class="visually-hidden">Корзина с товарами</span>
+            <span class="visually-hidden">Корзина с товарами.</span>
             <svg class="menu-user-basket-full" aria-hidden="true" focusable="false" width="18" height="18"
               viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -85,20 +108,20 @@
                   <p class="cart-fill-text">1 кг х 310 ₽</p>
                 </div>
                 <span class="cart-fill-price">310 ₽</span>
-                <button class="cart-button-close">
+                <button class="cart-button-close" type="button">
                   <span class="visually-hidden">Удалить этот товар</span>
                 </button>
               </li>
               <li class="cart-fill-item">
                 <div class="cart-image-wrapper">
-                  <img class="cart-fill-image" src="./images/buble-gum-smoll.png" alt="" width="16" height="16">
+                  <img class="cart-fill-image" src="./images/catalog/buble-gum-smoll.png" alt="" width="16" height="16">
                 </div>
                 <div class="cart-text-wrapper">
                   <h3 class="cart-fill-subtitle">Бабл&#8209;гам</h3>
                   <p class="cart-fill-text">1,5 кг х 320 ₽</p>
                 </div>
                 <span class="cart-fill-price">480 ₽</span>
-                <button class="cart-button-close">
+                <button class="cart-button-close" type="button">
                   <span class="visually-hidden">Удалить этот товар</span>
                 </button>
               </li>
@@ -150,8 +173,10 @@
           </fieldset>
           <fieldset class="field field-range">
             <legend class="range-text">Цена:
-              <input class="range-input" type="number" value="100">₽ –
-              <input class="range-input" type="number" value="500">₽
+              <label class="visually-hidden" for="min">Минимальная цена.</label>
+              <input class="range-input" id="min" name="min-price" type="number" value="100">₽ –
+              <label class="visually-hidden" for="max">Максимальная цена.</label>
+              <input class="range-input" id="max" name="max-price" type="number" value="500">₽
             </legend>
             <div class="range-scale-wrapper">
               <div class="range-scale">
@@ -244,8 +269,10 @@
         <h2 class="visually-hidden">Список товаров.</h2>
         <ul class="ice-cards-list">
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/raspberries.png" width="270" height="184"
-              alt="мороженное со вкусом малины.">
+            <a href="#">
+              <img class="ice-cards-image" src="./images/catalog/raspberries.png" width="270" height="184"
+                alt="мороженное со вкусом малины.">
+            </a>
             <div class="fon">
               <h3 class="ice-cards-subtitle">
                 <a href="#">Малинка</a>
@@ -264,8 +291,10 @@
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/pistachio.png" width="270" height="184"
-              alt="мороженное со вкусом фисташки.">
+            <a href="#">
+              <img class="ice-cards-image" src="./images/catalog/pistachio.png" width="270" height="184"
+                alt="мороженное со вкусом фисташки.">
+            </a>
             <div class="fon">
               <h3 class="ice-cards-subtitle">
                 <a href="#">Фисташка</a>
@@ -284,8 +313,10 @@
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/blueberry.png" width="270" height="184"
-              alt="мороженное со вкусом черники.">
+            <a href="#">
+              <img class="ice-cards-image" src="./images/catalog/blueberry.png" width="270" height="184"
+                alt="мороженное со вкусом черники.">
+            </a>
             <div class="fon">
               <h3 class="ice-cards-subtitle">
                 <a href="#">Черника</a>
@@ -304,8 +335,10 @@
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/buble-gum.png" width="270" height="184"
-              alt="мороженное со вкусом бабл-гам.">
+            <a href="#">
+              <img class="ice-cards-image" src="./images/catalog/buble-gum.png" width="270" height="184"
+                alt="мороженное со вкусом бабл-гам.">
+            </a>
             <div class="fon">
               <h3 class="ice-cards-subtitle">
                 <a href="#">Бабл-гам</a>
@@ -324,8 +357,10 @@
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/blackberry.png" width="270" height="184"
-              alt="мороженное со вкусом ежевики.">
+            <a href="#">
+              <img class="ice-cards-image" src="./images/catalog/blackberry.png" width="270" height="184"
+                alt="мороженное со вкусом ежевики.">
+            </a>
             <div class="fon">
               <h3 class="ice-cards-subtitle">
                 <a href="#">Ежевика</a>
@@ -344,8 +379,10 @@
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/banana.png" width="270" height="184"
-              alt="мороженное со вкусом банана.">
+            <a href="#">
+              <img class="ice-cards-image" src="./images/catalog/banana.png" width="270" height="184"
+                alt="мороженное со вкусом банана.">
+            </a>
             <div class="fon">
               <h3 class="ice-cards-subtitle">
                 <a href="#">Банан</a>
@@ -364,8 +401,10 @@
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/choclate.png" width="270" height="184"
-              alt="мороженное со вкусом шоколада.">
+            <a href="#">
+              <img class="ice-cards-image" src="./images/catalog/choclate.png" width="270" height="184"
+                alt="мороженное со вкусом шоколада.">
+            </a>
             <div class="fon">
               <h3 class="ice-cards-subtitle">
                 <a href="#">Шоколадка</a>
@@ -384,8 +423,10 @@
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/strawberry.png" width="270" height="184"
-              alt="мороженное со вкусом клубники.">
+            <a href="#">
+              <img class="ice-cards-image" src="./images/catalog/strawberry.png" width="270" height="184"
+                alt="мороженное со вкусом клубники.">
+            </a>
             <div class="fon">
               <h3 class="ice-cards-subtitle">
                 <a href="#">Клубничка</a>
@@ -404,8 +445,10 @@
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/lemon.png" width="270" height="184"
-              alt="мороженное со вкусом лимона.">
+            <a href="#">
+              <img class="ice-cards-image" src="./images/catalog/lemon.png" width="270" height="184"
+                alt="мороженное со вкусом лимона.">
+            </a>
             <div class="fon">
               <h3 class="ice-cards-subtitle">
                 <a href="#">Лимон</a>
@@ -424,8 +467,10 @@
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/menthol.png" width="270" height="184"
-              alt="мороженное со вкусом ментола.">
+            <a href="#">
+              <img class="ice-cards-image" src="./images/catalog/menthol.png" width="270" height="184"
+                alt="мороженное со вкусом ментола.">
+            </a>
             <div class="fon">
               <h3 class="ice-cards-subtitle">
                 <a href="#">Ментол</a>
@@ -444,8 +489,10 @@
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/nut.png" width="270" height="184"
-              alt="мороженное со вкусом фисташки с шоколадным сиропом.">
+            <a href="#">
+              <img class="ice-cards-image" src="./images/catalog/nut.png" width="270" height="184"
+                alt="мороженное со вкусом фисташки с шоколадным сиропом.">
+            </a>
             <div class="fon">
               <h3 class="ice-cards-subtitle">
                 <a href="#">Орешек</a>
@@ -464,8 +511,10 @@
             </div>
           </li>
           <li class="ice-cards-item">
-            <img class="ice-cards-image" src="./images/catalog/cream-brule.png" width="270" height="184"
-              alt="мороженное со вкусом крем-брюле.">
+            <a href="#">
+              <img class="ice-cards-image" src="./images/catalog/cream-brule.png" width="270" height="184"
+                alt="мороженное со вкусом крем-брюле.">
+            </a>
             <div class="fon">
               <h3 class="ice-cards-subtitle">
                 <a href="#">Крем-брюле</a>
@@ -575,7 +624,7 @@
               Наши документы</a>
           </li>
           <li class="documents-item">
-            <a class="documents-link" href="#">
+            <a class="documents-link " href="#">
               <span class="visually-hidden">О производстве</span>
               О производстве</a>
           </li>

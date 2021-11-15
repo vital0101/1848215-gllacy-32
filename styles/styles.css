@@ -1646,12 +1646,53 @@ label {
 }
 
 .delivery-info-date {
+  position: relative;
+
   background-image: url("../images/svg/info.svg");
   background-repeat: no-repeat;
   background-position: center;
 
   cursor: pointer;
 }
+
+.tooltip {
+  position: absolute;
+  top: -11px;
+  left: 30px;
+  display: none;
+  width: 100px;
+  height: 36px;
+  padding: 6px;
+  border: 1px solid grey;
+  background-color: #fcfcfc;
+}
+
+.tooltip::before {
+  position: absolute;
+  top: 10px;
+  left: -16px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-right-color: grey;
+  content: "";
+}
+
+.tooltip::after {
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-right-color: #fcfcfc;
+  content: "";
+}
+
+.delivery-info-date:hover  .tooltip {
+  display: block;
+}
+
 
 .delivery-info-address {
   position: relative;
